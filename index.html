@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Key & Chord Analyzer</title>
+  <style>
+    body { background: #111; color: #fff; text-align: center; font-family: sans-serif; }
+    canvas { border: 1px solid #555; margin-top: 20px; }
+    button, input { font-size: 1rem; padding: 8px 16px; margin: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Real-Time Audio Key & Chord Analyzer</h1>
+  <input type="file" id="audioFile" accept="audio/*">
+  <button id="playButton">Play File</button>
+  <button id="micButton">Use Microphone</button>
+
+  <h2 id="pitchOutput">Pitch: -- Hz</h2>
+  <h2 id="noteOutput">Note: --</h2>
+  <h2 id="chordOutput">Possible Chord: --</h2>
+  <h2 id="keyOutput">Estimated Key: --</h2>
+
+  <canvas id="canvas" width="800" height="300"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
